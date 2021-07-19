@@ -1,0 +1,12 @@
+<?xml version="1.0" ?>
+<launch>
+  <param name="/use_sim_time" value="true" />
+
+  <node name="cartographer_node" pkg="cartographer_ros"
+      type="cartographer_node" args="
+          -configuration_directory
+              $(find neng)/cfg/turtlebot3
+          -configuration_basename cart_2d.lua" >
+  </node>
+
+</launch>

@@ -1,0 +1,9 @@
+<?xml version="1.0" ?>
+
+<launch>
+  <include file="$(find neng)/launch/gazebo_slam.launch" />
+  <include file="$(find neng)/launch/turtlebot3_no_map.launch" />
+  
+  <include file="$(find neng)/launch/turtlebot3_slam.launch" />
+  
+</launch>
